@@ -1,0 +1,3 @@
+Warnung: Breitenkorrektur eingeschränkt.  Für die aktuellen Designregeln muss sich der Breitenkorrekturwert im Bereich [0,000001 mm; 0,199999 mm] befinden.
+Fehler: Kann das Ausgabeverzeichnis "/cam" nicht erstellen.
+Fehler: Kann das Ausgabeverzeichnis "/cam" nicht erstellen.
