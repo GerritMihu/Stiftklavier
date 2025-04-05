@@ -12,7 +12,7 @@ Beim IC ist wichtig zu beachten, dass dieser richtig gepolt eingelötet wird. De
 
 ### 2. Drähte vorbereiten
 
-Zunächst werden 4 rote Drähte und 6 schwarze Drähte mit je einem Durchmesser von 0,2mm (gegebenenfalls auch 0,25mm) und einer Länge von 120mm abgeschnitten. Weiters werden ein roter und zwei schwarze Drähte mit einer Länge von 230mm abgelängt. Alle Drähte werden auf beiden Seiten 10mm abisoliert.
+Zunächst werden 4 rote Drähte und 6 schwarze Drähte mit je einem Durchmesser von 0,2mm (gegebenenfalls auch 0,25mm) und einer Länge von 90mm abgeschnitten. Weiters werden ein roter und zwei schwarze Drähte mit einer Länge von 230mm abgelängt. Alle Drähte werden auf beiden Seiten 10mm abisoliert.
 
 ### 3. Lautsprecher
 
@@ -20,7 +20,7 @@ An den Lautsprecher wird je ein roter und ein schwarzer Draht mit einer Länge v
 
 ### 4. Potenziometer
 
-Es werden ein Potenziometer mit dem Wert von und eines mit benötigt. Anschließend wird je ein schwarzer Draht auf jeden Anschluss des Potis gelötet.
+Es werden ein Potenziometer mit dem Wert von 1K Ohm und eines mit 50K Ohm benötigt. Anschließend wird je ein schwarzer Draht auf jeden Anschluss des Potis gelötet.
 
 ### 5. Anlöten der vorbereiteten Bauteile
 
@@ -29,10 +29,10 @@ Nun werden alle Bauteile, die wir vorher vorbereitet haben (Lautsprecher und Pot
 <u>Als Hinweis:</u>
 
 - Lautsprecher: Der Lautsprecher wird auf der gegenüberliegenden Seite der Taster angelötet.
-- Poti : Dies wird gleich neben dem Lautsprecher angelötet, dort wo drei Bohrungen nebeneinander liegen.
-- Poti : Das zweite Poti wird bei den übrig gebliebenen drei Bohrungen angelötet.
+- Poti 1K: Dies wird gleich neben dem Lautsprecher angelötet, dort wo drei Bohrungen nebeneinander liegen.
+- Poti 50K: Das zweite Poti wird bei den übrig gebliebenen drei Bohrungen angelötet.
 - Batterieclip: Dieser wird gleich neben den Tastern angelötet, wobei der rote Draht unten ist (in Richtung der großen Kupferflächen).
-- Draht des Stiftes: Der Stift wird erst nach dem Einbau der Platine ins Gehäuse angelötet, jedoch muss ein Ende des Drahtes schon angelötet werden. Dazu wird ein langer (23cm) Draht genommen und bei der einzelnen Bohrung bei der Diode angelötet.
+- Draht des Stiftes: Der Stift wird erst nach dem Einbau der Platine ins Gehäuse angelötet, jedoch muss ein Ende des Drahtes schon angelötet werden. Dazu wird ein langer (150mm) Draht genommen und bei der einzelnen Bohrung bei der Diode angelötet.
 
 ### 6. Inbetriebnahme
 
@@ -59,7 +59,7 @@ Damit der Stift während er nicht im Gebrauch ist verstaut wird, muss dieses Loc
 _Abbildung 2_
 
 
-Um später den Deckel anschrauben zu können, werden rechts und links hinten Muttern „eingeschmolzen“ in das Gehäuse. Dazu werden Einschmelzmuttern oder Einlötmuttern auf die Bohrungen gelegt und so lange mit der Lötspitze erhitzt, bis sie plant mit der Oberkante abschließt Abbildung 3).
+Um später den Deckel anschrauben zu können, werden rechts und links hinten Muttern eingeschmolzen in das Gehäuse. Dazu werden Einschmelzmuttern oder Einlötmuttern auf die Bohrungen gelegt und so lange mit der Lötspitze erhitzt, bis sie plant mit der Oberkante abschließt Abbildung 3).
 
 <img src="bilder/Abbildung3.png" width="50%" text-align: center>
 
@@ -71,7 +71,7 @@ Um die Platine ins Gehäuse einzubauen, wird sie von hinten, mit den großen Kup
 
 ### 9. Stift des Stylophons
 
-Hierzu wird ein 10cm lange Stück eines Kupferdrahtes mit einem Querschnitt von vorbereitet (Eine Spitze rund schleifen!). Anschließend werden auf beiden Seiten 15mm abisoliert und auf einem Ende mit viel Lötzinn und einer möglichst großen Lötspitze der vorgesehene Draht (mit einer Länge von 23cm) angelötet. Um die Lötstelle zu sichern, wird anschließend ein Schrumpfschlauch von ca. 4cm mit dem Heißluftföhn geschrumpft.
+Hierzu wird ein 100mm lange Stück eines Kupferdrahtes mit einem Querschnitt von vorbereitet (Eine Spitze rund schleifen!). Anschließend werden auf beiden Seiten 15mm abisoliert und auf einem Ende mit viel Lötzinn und einer möglichst großen Lötspitze der vorgesehene Draht (mit einer Länge von 150mm) angelötet. Um die Lötstelle zu sichern, wird anschließend ein Schrumpfschlauch von ca. 4cm mit dem Heißluftföhn geschrumpft.
 
 ### 10. Knopf befestigen
 
