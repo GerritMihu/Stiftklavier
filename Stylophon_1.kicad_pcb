@@ -12756,7 +12756,7 @@
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
 		(property "Reference" "BT1"
-			(at 0 2.33 -0)
+			(at 0 2.33 0)
 			(layer "F.SilkS")
 			(uuid "216ea602-a337-40e6-bd93-1587f660470d")
 			(effects
@@ -12767,7 +12767,7 @@
 			)
 		)
 		(property "Value" "9V"
-			(at 0 -4.87 -0)
+			(at 0 -4.87 0)
 			(layer "F.Fab")
 			(uuid "f20ff71b-71c2-44ac-ae5d-7313c9fd9cc9")
 			(effects
@@ -13804,7 +13804,7 @@
 		(descr "Through hole straight socket strip, 1x02, 2.00mm pitch, single row (from Kicad 4.0.7), script generated")
 		(tags "Through hole socket strip THT 1x02 2.00mm single row")
 		(property "Reference" "Audio_Out1"
-			(at 2 -1 -90)
+			(at 2 -1 270)
 			(layer "F.SilkS")
 			(uuid "cea2c58b-773a-40fd-8884-1352e98c8d53")
 			(effects
