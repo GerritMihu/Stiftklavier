@@ -127,129 +127,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Conn_01x01_Socket"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x01_Socket"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x01, script generated"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x01_Socket_1_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -0.508 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -0.508)
-					(mid -0.5058 0)
-					(end 0 0.508)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:Conn_01x02_Socket"
 			(pin_names
 				(offset 1.016)
@@ -512,6 +389,229 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:Battery"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "BT"
+				(at 2.54 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Battery"
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 1.524 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 1.524 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Multiple-cell battery"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "batt voltage-source cell"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Battery_0_1"
+				(rectangle
+					(start -2.286 1.778)
+					(end 2.286 1.524)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -2.286 -1.27)
+					(end 2.286 -1.524)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.524 1.016)
+					(end 1.524 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.524 -2.032)
+					(end 1.524 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.778) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.508) (xy 0 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.016) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 3.048) (xy 1.778 3.048)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 3.556) (xy 1.27 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Battery_1_1"
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2348,6 +2448,12 @@
 		(uuid "0ec7c51a-02f8-4b4e-ab82-76eab3d9ac91")
 	)
 	(junction
+		(at 46.99 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "15394a15-f70b-4ace-9ca5-d14594b219bd")
+	)
+	(junction
 		(at 149.86 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2408,16 +2514,16 @@
 		(uuid "491e81f1-2013-4319-8e77-3ea1cc814c92")
 	)
 	(junction
-		(at 207.01 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4d965034-8ff7-4cae-9508-ec473ff7cb66")
-	)
-	(junction
 		(at 36.83 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "52dafc33-7cf4-4902-b8aa-7130aa90e4b5")
+	)
+	(junction
+		(at 207.01 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5438ee0c-a308-486c-a21b-a91ffec84fe8")
 	)
 	(junction
 		(at 147.32 29.21)
@@ -2442,12 +2548,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "644a893a-a500-4002-b1fe-f7780752a776")
-	)
-	(junction
-		(at 48.26 29.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "673be2fe-ceb6-40c4-974b-50a7052d81db")
 	)
 	(junction
 		(at 177.8 130.81)
@@ -2557,6 +2657,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 29.21) (xy 46.99 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "035b7bed-6559-4ba8-b1d4-81ca13ee1546")
+	)
+	(wire
+		(pts
 			(xy 163.83 73.66) (xy 163.83 71.12)
 		)
 		(stroke
@@ -2657,7 +2767,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 29.21) (xy 39.37 29.21)
+			(xy 36.83 29.21) (xy 38.1 29.21)
 		)
 		(stroke
 			(width 0)
@@ -2694,16 +2804,6 @@
 			(type default)
 		)
 		(uuid "178acb32-dcbe-40c3-8034-35da51f9a7fa")
-	)
-	(wire
-		(pts
-			(xy 46.99 29.21) (xy 48.26 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18028bdf-508c-4b8f-9595-58e09bb8093e")
 	)
 	(wire
 		(pts
@@ -2824,16 +2924,6 @@
 			(type default)
 		)
 		(uuid "322c5b6b-fd55-4234-ad35-2cae30062372")
-	)
-	(wire
-		(pts
-			(xy 207.01 96.52) (xy 212.09 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "33cc9aac-44ca-47b9-8e25-2e132ea02fe7")
 	)
 	(wire
 		(pts
@@ -3057,7 +3147,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 29.21) (xy 49.53 29.21)
+			(xy 46.99 29.21) (xy 48.26 29.21)
 		)
 		(stroke
 			(width 0)
@@ -3337,7 +3427,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 29.21) (xy 58.42 29.21)
+			(xy 55.88 29.21) (xy 58.42 29.21)
 		)
 		(stroke
 			(width 0)
@@ -3527,7 +3617,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 29.21) (xy 147.32 29.21)
+			(xy 140.97 29.21) (xy 147.32 29.21)
 		)
 		(stroke
 			(width 0)
@@ -3614,6 +3704,16 @@
 			(type default)
 		)
 		(uuid "bf611188-e8ce-40d6-b392-b379466180c4")
+	)
+	(wire
+		(pts
+			(xy 207.01 96.52) (xy 212.09 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c089bcdb-a930-44fe-b5d8-737e80d88a9c")
 	)
 	(wire
 		(pts
@@ -3727,6 +3827,26 @@
 	)
 	(wire
 		(pts
+			(xy 133.35 29.21) (xy 128.27 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1db3348-61e8-48a5-89a1-b3943dcaed21")
+	)
+	(wire
+		(pts
+			(xy 25.4 172.72) (xy 25.4 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d25113f4-31b4-4288-b4ef-2fb595be1c22")
+	)
+	(wire
+		(pts
 			(xy 68.58 29.21) (xy 71.12 29.21)
 		)
 		(stroke
@@ -3817,7 +3937,17 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 21.59) (xy 48.26 29.21)
+			(xy 25.4 157.48) (xy 25.4 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5e39f8f-13ad-4827-accf-b79e5f8a7afc")
+	)
+	(wire
+		(pts
+			(xy 46.99 21.59) (xy 46.99 29.21)
 		)
 		(stroke
 			(width 0)
@@ -3934,6 +4064,206 @@
 			(type default)
 		)
 		(uuid "feb534df-11c1-445a-b747-f635c0f3a7c2")
+	)
+	(label "4,5"
+		(at 201.93 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0ba38349-8dcd-41da-8ed9-eb0b36b4bbd6")
+	)
+	(label "2"
+		(at 248.92 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "22ccd30f-5bd8-4a4e-974c-bf8655d7eb06")
+	)
+	(label "12"
+		(at 36.83 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2b190342-b70c-4b58-8055-762b2cf9d991")
+	)
+	(label "8,5"
+		(at 102.87 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2bda68b6-7c2a-442a-aa02-210357351c59")
+	)
+	(label "9"
+		(at 90.17 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2ee67f39-eb1d-48c9-a8ad-01193b509073")
+	)
+	(label "11,5"
+		(at 46.99 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3928a720-9f42-4757-a16e-829f67531dd0")
+	)
+	(label "4"
+		(at 213.36 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "43f06339-c7d3-4c2d-b364-01bfc7ecbdf2")
+	)
+	(label "6,5"
+		(at 171.45 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6ab6602f-5c68-4a38-bd05-21f6ae849f0d")
+	)
+	(label "6"
+		(at 181.61 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "737bb208-ce53-49b3-acbd-7fdbc65e0d5a")
+	)
+	(label "1,5"
+		(at 260.35 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7b40b4bc-a429-4bd8-b4d4-4ea0e1ff4ae8")
+	)
+	(label "8"
+		(at 115.57 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "815d19e3-8c33-4bce-b107-1e89248bc287")
+	)
+	(label "5"
+		(at 191.77 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "81c60071-edf8-46f3-83a8-8089f8b0e3ad")
+	)
+	(label "10,5"
+		(at 68.58 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9580fa33-41f4-4fa7-95ce-8d5262dbbd3b")
+	)
+	(label "7,5"
+		(at 128.27 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9e9b0cfb-c8d3-496d-8ac3-53458303816e")
+	)
+	(label "7"
+		(at 147.32 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ba6688c8-e8b6-4e6d-a457-e94bbaf774af")
+	)
+	(label "1"
+		(at 271.78 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "be9c185f-93da-4074-a9b4-296e92461e18")
+	)
+	(label "10"
+		(at 80.01 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c0ee8cb2-4aaf-4c18-8465-4d8f78f4ee4c")
+	)
+	(label "11"
+		(at 58.42 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d08663f9-ec05-4ac8-bffa-ec673d4208f7")
+	)
+	(label "3"
+		(at 236.22 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e611cb37-8636-47ba-a0b3-76d8dba416e7")
+	)
+	(label "3,5"
+		(at 224.79 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f4acb5cb-bb31-452f-ad3f-659227fd78fd")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -4298,7 +4628,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+		(property "Footprint" "Keypads:Keypad_Small"
 			(at 176.53 22.86 0)
 			(effects
 				(font
@@ -4406,6 +4736,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Battery")
+		(at 25.4 167.64 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0e4eda32-1d85-4f35-9b4f-9e9e102086ab")
+		(property "Reference" "BT1"
+			(at 21.59 165.7984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Battery"
+			(at 21.59 168.3384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 25.4 166.116 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 25.4 166.116 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Multiple-cell battery"
+			(at 25.4 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f068a86a-6aad-44df-85fe-828aea675505")
+		)
+		(pin "1"
+			(uuid "b94cab7e-cc71-41c8-9c3f-656fc17a42ac")
+		)
+		(instances
+			(project ""
+				(path "/fc66649b-a600-400d-9374-021afb915c60"
+					(reference "BT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 165.1 138.43 0)
 		(unit 1)
@@ -4503,7 +4903,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+		(property "Footprint" "Keypads:Keypad_Small"
 			(at 229.87 22.86 0)
 			(effects
 				(font
@@ -4570,7 +4970,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+		(property "Footprint" "Keypads:Keypad_Small"
 			(at 186.69 22.86 0)
 			(effects
 				(font
@@ -4981,7 +5381,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+		(property "Footprint" "Keypads:Keypad_Small"
 			(at 63.5 21.59 0)
 			(effects
 				(font
@@ -5156,71 +5556,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Socket")
-		(at 20.32 180.34 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2fede495-ab31-4c95-a8f4-2d64f99f1f44")
-		(property "Reference" "J3"
-			(at 20.955 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "-"
-			(at 20.955 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical"
-			(at 20.32 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 20.32 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 20.32 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "414e18e0-5fe8-4f68-9129-cc95e83f87d7")
-		)
-		(instances
-			(project "Stylophon_1"
-				(path "/fc66649b-a600-400d-9374-021afb915c60"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 80.01 21.59 0)
 		(unit 1)
@@ -5248,7 +5583,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+		(property "Footprint" "Keypads:Keypad_Small"
 			(at 85.09 21.59 0)
 			(effects
 				(font
@@ -5431,6 +5766,7 @@
 	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 190.5 96.52 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5438,7 +5774,7 @@
 		(dnp no)
 		(uuid "361383e5-3e39-430e-94b2-ead048b35285")
 		(property "Reference" "RV2"
-			(at 187.96 95.2499 0)
+			(at 187.96 97.7901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5447,7 +5783,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 196.342 101.854 0)
+			(at 194.564 99.822 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5502,16 +5838,16 @@
 	)
 	(symbol
 		(lib_id "Device:Speaker")
-		(at 217.17 96.52 0)
+		(at 217.17 99.06 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3b587d18-b6d2-4017-89b8-410af4e82b08")
 		(property "Reference" "LS1"
-			(at 222.25 96.5199 0)
+			(at 222.25 99.0601 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5520,7 +5856,7 @@
 			)
 		)
 		(property "Value" "75Ohm"
-			(at 222.25 99.0599 0)
+			(at 222.25 96.5201 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5529,7 +5865,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.00mm:PinSocket_1x02_P2.00mm_Vertical"
-			(at 217.17 101.6 0)
+			(at 217.17 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5547,7 +5883,7 @@
 			)
 		)
 		(property "Description" "Speaker"
-			(at 217.17 96.52 0)
+			(at 217.17 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5668,7 +6004,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+		(property "Footprint" "Keypads:Keypad_Small"
 			(at 120.65 21.59 0)
 			(effects
 				(font
@@ -5735,7 +6071,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+		(property "Footprint" "Keypads:Keypad_Small"
 			(at 133.35 21.59 0)
 			(effects
 				(font
@@ -5999,7 +6335,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 48.26 21.59 0)
+		(at 46.99 21.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6008,7 +6344,7 @@
 		(fields_autoplaced yes)
 		(uuid "56e44c11-79b1-4888-99f4-fe3bd7fff51b")
 		(property "Reference" "TP2"
-			(at 50.8 17.0179 0)
+			(at 49.53 17.0179 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6017,7 +6353,7 @@
 			)
 		)
 		(property "Value" "Fis"
-			(at 50.8 19.5579 0)
+			(at 49.53 19.5579 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6025,8 +6361,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
-			(at 53.34 21.59 0)
+		(property "Footprint" "Keypads:Keypad_Small"
+			(at 52.07 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6035,7 +6371,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 53.34 21.59 0)
+			(at 52.07 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6044,7 +6380,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 48.26 21.59 0)
+			(at 46.99 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6478,7 +6814,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 43.18 29.21 90)
+		(at 41.91 29.21 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6487,7 +6823,7 @@
 		(fields_autoplaced yes)
 		(uuid "665b2240-1db2-4a23-bc26-494a0987e659")
 		(property "Reference" "R2"
-			(at 43.18 22.86 90)
+			(at 41.91 22.86 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6495,7 +6831,7 @@
 			)
 		)
 		(property "Value" "2,05k"
-			(at 43.18 25.4 90)
+			(at 41.91 25.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6503,7 +6839,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 43.18 30.988 90)
+			(at 41.91 30.988 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6512,7 +6848,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 43.18 29.21 0)
+			(at 41.91 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6521,7 +6857,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 43.18 29.21 0)
+			(at 41.91 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6614,7 +6950,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 132.08 29.21 90)
+		(at 137.16 29.21 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6623,7 +6959,7 @@
 		(fields_autoplaced yes)
 		(uuid "70b0b332-d6d1-4eb4-b593-71e70c1c21ac")
 		(property "Reference" "R10"
-			(at 132.08 22.86 90)
+			(at 137.16 22.86 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6631,7 +6967,7 @@
 			)
 		)
 		(property "Value" "3,27k"
-			(at 132.08 25.4 90)
+			(at 137.16 25.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6639,7 +6975,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 132.08 30.988 90)
+			(at 137.16 30.988 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6648,7 +6984,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 132.08 29.21 0)
+			(at 137.16 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6657,7 +6993,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 132.08 29.21 0)
+			(at 137.16 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6841,7 +7177,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+		(property "Footprint" "Keypads:Keypad_Small"
 			(at 196.85 22.86 0)
 			(effects
 				(font
@@ -7111,7 +7447,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+		(property "Footprint" "Keypads:Keypad_Small"
 			(at 241.3 22.86 0)
 			(effects
 				(font
@@ -7246,7 +7582,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+		(property "Footprint" "Keypads:Keypad_Small"
 			(at 73.66 21.59 0)
 			(effects
 				(font
@@ -7515,7 +7851,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+		(property "Footprint" "Keypads:Keypad_Small"
 			(at 207.01 22.86 0)
 			(effects
 				(font
@@ -7738,7 +8074,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+		(property "Footprint" "Keypads:Keypad_Small"
 			(at 95.25 21.59 0)
 			(effects
 				(font
@@ -8406,7 +8742,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+		(property "Footprint" "Keypads:Keypad_Small"
 			(at 152.4 22.86 0)
 			(effects
 				(font
@@ -8879,7 +9215,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+		(property "Footprint" "Keypads:Keypad_Small"
 			(at 41.91 21.59 0)
 			(effects
 				(font
@@ -9153,7 +9489,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+		(property "Footprint" "Keypads:Keypad_Small"
 			(at 254 22.86 0)
 			(effects
 				(font
@@ -9220,7 +9556,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+		(property "Footprint" "Keypads:Keypad_Small"
 			(at 107.95 21.59 0)
 			(effects
 				(font
@@ -9287,7 +9623,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+		(property "Footprint" "Keypads:Keypad_Small"
 			(at 218.44 22.86 0)
 			(effects
 				(font
@@ -9733,71 +10069,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Socket")
-		(at 20.32 157.48 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f5a62bc0-4dbf-4a7c-9b6c-238e26082718")
-		(property "Reference" "J2"
-			(at 20.955 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+"
-			(at 20.955 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical"
-			(at 20.32 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 20.32 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 20.32 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5a7edf1c-447c-4b38-8f79-8c876152ac84")
-		)
-		(instances
-			(project "Stylophon_1"
-				(path "/fc66649b-a600-400d-9374-021afb915c60"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 260.35 22.86 0)
 		(unit 1)
@@ -9825,7 +10096,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+		(property "Footprint" "Keypads:Keypad_Small"
 			(at 265.43 22.86 0)
 			(effects
 				(font
@@ -9866,7 +10137,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 53.34 29.21 90)
+		(at 52.07 29.21 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9875,7 +10146,7 @@
 		(fields_autoplaced yes)
 		(uuid "f8fcf4d2-ccf3-4a05-aac2-c7e01b2e4954")
 		(property "Reference" "R3"
-			(at 53.34 22.86 90)
+			(at 52.07 22.86 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9883,7 +10154,7 @@
 			)
 		)
 		(property "Value" "2,18k"
-			(at 53.34 25.4 90)
+			(at 52.07 25.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9891,7 +10162,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 53.34 30.988 90)
+			(at 52.07 30.988 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9900,7 +10171,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 53.34 29.21 0)
+			(at 52.07 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9909,7 +10180,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 53.34 29.21 0)
+			(at 52.07 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10035,7 +10306,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
+		(property "Footprint" "Keypads:Keypad_Small"
 			(at 276.86 22.86 0)
 			(effects
 				(font
