@@ -7,6 +7,12 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "Stylophone")
+		(rev "1.0")
+		(company "HTL Steyr")
+		(comment 1 "Gerrit Mitterhuemer")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(2 "B.Cu" signal)
@@ -3663,7 +3669,7 @@
 	(footprint "Keypads:Keypad_Small"
 		(layer "F.Cu")
 		(uuid "3a9c8323-879d-4c90-9e31-e005c072fcb7")
-		(at 163.1 109)
+		(at 163 109)
 		(descr "SMD rectangular pad as test Point, square 4.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "TP3"
