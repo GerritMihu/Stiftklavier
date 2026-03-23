@@ -5,7 +5,7 @@
 	(uuid "fc66649b-a600-400d-9374-021afb915c60")
 	(paper "A4")
 	(title_block
-		(title "Stylophone")
+		(title "Stiftklavier")
 		(date "2025-09-07")
 		(rev "1.0")
 		(company "HTL-Steyr")
@@ -2641,7 +2641,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Phasenschieber Oszilator\n"
+	(text "Phasenschieber Oszilator für überlagerten Vibratoton\n"
 		(exclude_from_sim no)
 		(at 87.884 138.684 0)
 		(effects
