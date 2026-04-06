@@ -1,0 +1,18 @@
+kibot:
+  version: 1
+
+outputs:
+  - name: 'Schaltplan_PDF'
+    comment: "Schaltplan als PDF"
+    type: pdf_schematic
+    dir: cam
+
+  - name: 'Platine_PNG'
+    comment: "Platinenlayout als PNG"
+    type: png
+    dir: cam
+
+  - name: '3D_Ansicht'
+    comment: "3D-Rendering der Platine"
+    type: step
+    dir: cam
