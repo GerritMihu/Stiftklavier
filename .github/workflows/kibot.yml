@@ -1,0 +1,23 @@
+name: KiBot Export
+on: [push, pull_request]
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: KiBot installieren
+        run: pip install kibot
+
+      - name: KiCad-Daten exportieren
+        run: |
+          kibot -c .kibot.yml -d cam/
+
+      - name: Ergebnisse commiten
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add cam/
+          git commit -m "Automatisch generierte KiBot-Exporte" || echo "Keine Änderungen"
+          git push
