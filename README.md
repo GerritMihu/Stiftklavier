@@ -57,4 +57,4 @@ Dieses Repo nutzt **[KiBot](https://github.com/INTI-CMNB/KiBot)**, um automatisc
 ## 📄 Lizenz
 [MIT](LICENSE) – Nutze, modifiziere und teile das Projekt frei!
 
-<!-- KiBot Pipeline Test Trigger -->
+<!-- KiBot Pipeline Test Trigger: $(date) -->
