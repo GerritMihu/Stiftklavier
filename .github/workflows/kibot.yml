@@ -1,4 +1,4 @@
-name: KiBot Export (fixed)
+name: KiBot Export (KiCad 9)
 
 on: [push, pull_request]
 
@@ -6,16 +6,15 @@ jobs:
   export:
     runs-on: ubuntu-latest
 
+    container:
+      image: ghcr.io/inti-cmnb/kicad9_auto:latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Run KiBot (stable container)
-        uses: INTI-CMNB/KiBot@v2
-        with:
-          config: .kibot.yml
-          dir: cam
-          kicad_version: '9.0.0'
+      - name: Run KiBot
+        run: kibot -c .kibot.yml -d cam/
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
