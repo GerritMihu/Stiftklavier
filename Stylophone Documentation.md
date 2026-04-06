@@ -1,64 +1,133 @@
-# Stylophone Documentation
+# Stiftklavier – Aufbauanleitung
 
-### 1. Assembling the Circuit Board
-When assembling a circuit board, always start with the smallest components (capacitors, resistors, and diodes) and proceed to the largest ones.
+**Schritt-für-Schritt-Anleitung für den Aufbau des Stiftklaviers (Stylophone).**
+🎯 **Ziel**: Ein funktionierendes, musikalisches Lehrmittel für Elektronik und Mechatronik.
 
-For the resistors, it is important that they closely match the specified values to ensure that the pads correspond to a musical scale without significant jumps between tones. Since many resistor values are not standard, several resistors may need to be connected in parallel or series (soldered on top of each other).
+---
+## ⚠️ Wichtige Hinweise
+> **Sicherheit & Qualität**
+> - **IC-Orientierung prüfen**: Pin 1 ist mit einem Punkt markiert.
+> - **Nur die großen Kupferflächen mit dem Stift berühren** – andere Bereiche können die Transistoren/ICs beschädigen.
+> - **Lötstellen kontrollieren**: Keine Kurzschlüsse oder Kaltlötstellen!
 
-For the IC, ensure that it is soldered with the correct orientation. Pin 1 is usually marked with a dot or a line.
+---
+## 📋 Material & Werkzeuge
+### **Benötigte Komponenten** (siehe [BOM](bom/))
+| Komponente          | Menge | Hinweise                                  |
+|----------------------|-------|-------------------------------------------|
+| Widerstände          | 12x   | Werte nach Schaltplan (ggf. parallel/seriell kombinieren) |
+| IC (z. B. 555-Timer)  | 1x    | **Achtung**: Pin 1 markieren!             |
+| Potentiometer 1k/50k | 2x    | 1k für Tonhöhe, 50k für Lautstärke         |
+| Lautsprecher         | 1x    | Polung beachten (siehe Schritt 3)         |
+| 9V-Blockbatterie     | 1x    | Frisch und voll geladen                   |
+| Kabel (0,2 mm²)      | 10x   | 4x rot (120 mm), 6x schwarz (120 mm)       |
 
-### 2. Preparing Wires
-Cut 4 red wires and 6 black wires, each with a diameter of 0.2mm (or 0.25mm if necessary) and a length of 120mm. Additionally, cut one red and two black wires to a length of 230mm. Strip 10mm of isolation from both ends of all wires.
+### **Werkzeuge**
+- Lötkolben + Lötzinn
+- Multimeter (für Widerstandsprüfung)
+- Seitenschneider + Abisolierzange
+- 5,5 mm-Bohrer (für Potentiometer-Löcher)
 
-### 3. Speaker
-Solder one red and one black wire, each 230mm long, to the speaker. The polarity does not matter here since it only determines whether the speaker moves inward or outward. However, if multiple speakers are used, ensure they are all connected with the same polarity to prevent interference between sound waves, which could distort the sound. Use automotive soldering paste to solder the wires to the speaker housing. This paste contains a special, more aggressive flux that ensures a better connection to the metal (iron).
+---
+## 🔧 Aufbau – Schritt für Schritt
 
-### 4. Potentiometer
-Two potentiometers are needed, one with a value of 1k and the other with 50k. Solder a black wire to each terminal of the potentiometers.
+### **1. Platine bestücken**
+**Ziel**: Alle SMD-/Durchsteckkomponenten korrekt platzieren.
+1. **Beginne mit den kleinsten Bauteilen** (Widerstände, Dioden, dann IC).
+2. **Widerstände**:
+   - Werte **exakt** nach Schaltplan wählen.
+   - Falls nötig, Widerstände **parallel/seriell kombinieren** (z. B. 2x 10k → 5k).
+3. **IC einlöten**:
+   - **Pin 1** (markiert) **nach links oben** ausrichten.
+   - **Prüfen**: Multimeter auf Durchgang – keine Kurzschlüsse zwischen Pins!
 
-### 5. Soldering the Prepared Components
-Now solder all the components that were prepared earlier (speaker and potentiometers) onto the circuit board according to the BOM file.
+---
+### **2. Kabel vorbereiten**
+**Ziel**: 10 Kabel mit korrekter Länge und Abisolierung.
+| Farbe  | Länge | Menge | Verwendung                  |
+|--------|-------|-------|-----------------------------|
+| Rot    | 120mm | 4x    | Stromversorgung/Buttons     |
+| Schwarz| 120mm | 6x    | Masse/Potentiometer         |
+| Rot    | 230mm | 1x    | Lautsprecher (+)           |
+| Schwarz| 230mm | 2x    | Lautsprecher (–)/Stylus    |
 
-**Notes:**
-- **Speaker:** Solder the speaker on the side opposite the buttons.
-- **Potentiometer 1k:** Solder this next to the speaker at the location with three holes arranged in a row.
-- **Potentiometer 50k:** Solder this to the remaining set of three holes.
-- **Battery Clip:** Solder this next to the buttons, with the red wire facing downward (towards the large copper areas).
-- **Stylus Wire:** The stylus wire is soldered after the circuit board is installed in the enclosure. However, one end of the wire must be soldered beforehand. Use a 230mm long wire and solder it to the single hole near the diode.
+**Schritte**:
+1. Kabel auf Länge schneiden.
+2. **10 mm abisolieren** (beidseitig).
+3. **Lötzinn vorverzinnen** für bessere Verbindungen.
 
-### 6. Initial Testing
-Once all components are soldered, the circuit board can be powered on. Before doing so, inspect all solder joints to ensure they are correct, especially the IC orientation. Perform a basic short circuit check by measuring the resistance across the power supply; it should not be too low. Finally, power the circuit with a fully charged 9V block battery.
+---
+### **3. Lautsprecher anlöten**
+**Ziel**: Stabile Verbindung für klare Tonwiedergabe.
+1. **230 mm-Kabel** (rot/schwarz) an Lautsprecher löten.
+   - **Polarität**: Rot = **+**, Schwarz = **–** (für gleiche Phasenlage bei mehreren Lautsprechern).
+   - **Tipp**: Autolötpaste für bessere Haftung auf Metall verwenden.
+2. **Prüfen**: Widerstandsmessung (sollte ~8 Ω sein).
 
-### 7. Building the Enclosure
-The enclosure is typically 3D-printed. Since a hole for one potentiometer is missing and the existing one is too small, these must be drilled or re-drilled.
+---
+### **4. Potentiometer vorbereiten**
+**Ziel**: 1k- und 50k-Poti für Tonhöhe/Lautstärke einbauen.
+1. **Schwarze Kabel** (120 mm) an **alle 3 Pins** jedes Potis löten.
+2. **Positionieren**:
+   - **1k-Poti**: Neben Lautsprecher (3 Löcher in Reihe).
+   - **50k-Poti**: Andere Seite der Platine (3 Löcher).
 
-- **Potentiometer Hole:** Use a 5.5mm drill to enlarge the existing hole (see Figure 1). Measure 20mm to the right from the center of this hole and drill another 5.5mm hole there.
+---
+### **5. Komponenten auf Platine löten**
+**Ziel**: Alle vorbereiteten Teile (Lautsprecher, Potis, Batterieclip) anlöten.
+- **Lautsprecher**: Auf der **Button-gegenüberliegenden Seite**.
+- **Batterieclip**: Rot = **unten** (zu den Kupferflächen).
+- **Stylus-Kabel**: 230 mm-Kabel an **einzelnes Loch nahe Diode** löten (anderes Ende später).
 
-    <img src="bilder/Abbildung1.png" width="50%" text-align: center>
+---
+### **6. Erste Inbetriebnahme**
+1. **Sichtprüfung**: Alle Lötstellen auf Kaltlötstellen/Kurzschlüsse prüfen.
+2. **IC-Orientierung doppelt checken** (Pin 1!).
+3. **9V-Batterie anschließen** – beide Buttons drücken → Ton sollte hörbar sein.
 
-  _Figure 1_
-  
-- **Potentiometer Mounting:** Attach the potentiometers from the inside using hot glue. Be careful not to glue over the rotary part of the potentiometer.
-- **Stylus Storage Hole:** Drill this hole with a 5mm drill to store the stylus when not in use (see Figure 2).
-  
-    <img src="bilder/Abbildung2.png" width="50%" text-align: center>
+---
+### **7. Gehäuse bearbeiten**
+**Ziel**: 3D-gedrucktes Gehäuse für Potentiometer und Stylus anpassen.
+1. **Bohrungen**:
+   - **5,5 mm-Loch** für 1k-Poti **vergrößern** (existierendes Loch).
+   - **Neues 5,5 mm-Loch** 20 mm rechts daneben bohren (für 50k-Poti).
+   - **5 mm-Loch** für Stylus-Aufbewahrung (siehe [Abbildung 2](bilder/Abbildung2.png)).
+2. **Potentiometer montieren**:
+   - Von **innen** mit Heißkleber fixieren (nicht den Drehknopf verkleben!).
+3. **Schraubmuttern einsetzen**:
+   - **Heat-Set-Muttern** in die hinteren Löcher drücken und mit Lötkolben fixieren.
 
-  _Figure 2_
-  
-- **Screw Inserts:** To attach the lid later, insert nuts into the back right and left sides of the enclosure. Use heat-set or solder-in nuts and melt them into the holes with a soldering iron until they are flush with the surface (see Figure 3).
+---
+### **8. Platine einbauen**
+1. Platine **horizontal von hinten** ins Gehäuse schieben (Kupferflächen nach vorne).
+2. **9V-Batterie** unter der Platine platzieren.
 
-  <img src="bilder/Abbildung3.png" width="50%" text-align: center>
+---
+### **9. Stylus vorbereiten**
+**Ziel**: 100 mm-Kupferdraht (6 mm²) als Stift für die Tonabnahme.
+1. **Ein Ende rund feilen**.
+2. **15 mm abisolieren** und an das 230 mm-Kabel löten.
+3. **Shrink-Tube** (40 mm) über die Lötstelle schieben und erhitzen.
 
-  _Figure 3_
+---
+### **10. Buttons anbringen**
+- **Beide Buttons gleichzeitig drücken** → Ton erzeugt.
+- **Deckel aufschrauben** (vorher Buttons durch die Löcher stecken).
 
-### 8. Installing the Circuit Board
-Slide the circuit board horizontally into the enclosure from the back, with the large copper areas facing forward. Connect the 9V battery and place it under the circuit board.
+---
+## 🔍 Troubleshooting
+| Problem                | Ursache                          | Lösung                                  |
+|------------------------|----------------------------------|----------------------------------------|
+| **Kein Ton**           | Falsche IC-Orientierung          | Pin 1 prüfen, ggf. umlöten             |
+| **Verzerrter Klang**   | Kaltlötstelle am Lautsprecher    | Nachlöten, Widerstand prüfen           |
+| **Buttons reagieren nicht** | Unterbrochene Kabel          | Durchgang prüfen, neu löten            |
 
-### 9. Stylus
-Prepare a 100mm piece of copper wire with a specific cross-section 6mm^2 and file one end round. Strip 15mm of insulation from both ends and solder one end to the 230mm wire using a large soldering tip and plenty of solder. Secure the solder joint with a 40mm piece of heat shrink tubing, shrunk using a hot air gun.
+---
+## 📚 Weiterführendes
+- [Schaltplan (PDF)](cam/Stylophon_1.pdf)
+- [3D-Modelle für Gehäuse](3D/)
+- [BOM mit Bestelllinks](bom/)
 
-### 10. Attaching the Buttons
-To produce a tone during operation, both buttons must be pressed simultaneously. Before screwing on the lid, insert the printed button through the hole in the lid.
-
-### Operating Notes
-Only touch the large copper areas with the stylus. Touching other parts may damage the transistors or IC.
+---
+**Fertig!** 🎉
+→ Experimentiere mit anderen Widerständen für neue Tonleitern oder baue ein MIDI-Interface ein.
