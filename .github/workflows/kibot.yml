@@ -1,32 +1,24 @@
-name: KiBot Export (KiCad 10)
+name: KiBot Export (fixed)
+
 on: [push, pull_request]
 
 jobs:
   export:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: KiCad 10 und Abhängigkeiten installieren
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y python3-pip python3-dev
-          sudo add-apt-repository --yes ppa:kicad/kicad-10.0-releases
-          sudo apt-get update
-          sudo apt-get install -y kicad
-          # KiBot mit --no-compile installieren
-          pip install --no-compile kibot
+      - name: Run KiBot (stable container)
+        uses: INTI-CMNB/KiBot@v2
+        with:
+          config: .kibot.yml
+          dir: cam
+          kicad_version: '9.0.0'
 
-      - name: cam-Ordner erstellen
-        run: mkdir -p cam
-
-      - name: KiCad-Daten exportieren
-        run: kibot -c .kibot.yml -d cam/
-
-      - name: Ergebnisse commiten
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git add cam/
-          git commit -m "Automatisch generierte KiBot-Exporte (KiCad 10)" || true
-          git push || true
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: kibot-output
+          path: cam/
