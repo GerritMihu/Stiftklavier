@@ -1,23 +1,24 @@
-name: KiBot Export (KiCad 9)
-
+name: KiBot Export (KiCad 10 Docker)
 on: [push, pull_request]
 
 jobs:
   export:
-    runs-on: ubuntu-latest
-
+    runs-on: ubuntu-22.04
     container:
-      image: ghcr.io/inti-cmnb/kicad9_auto:latest
-
+      image: ghcr.io/inti-cmnb/kibot-docker:kicad-10  # Offizieller KiBot-Container für KiCad 10
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Run KiBot
+      - name: cam-Ordner erstellen
+        run: mkdir -p cam
+
+      - name: KiCad-Daten exportieren
         run: kibot -c .kibot.yml -d cam/
 
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: kibot-output
-          path: cam/
+      - name: Ergebnisse commiten
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add cam/
+          git commit -m "Automatisch generierte KiBot-Exporte (KiCad 10 Docker)" || true
+          git push || true
