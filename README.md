@@ -39,8 +39,8 @@ Das Stiftklavier ist ein **praktisches Lehrmittel**, um:
 - Baue ein **MIDI-Interface** ein (Code-Beispiele folgen).
 
 ---
-## 🔧 CI/CD mit KiBot (KiCad 10)
-Dieses Repo nutzt **[KiBot](https://github.com/INTI-CMNB/KiBot)**, um automatisch:
+## 🔧 CI/CD mit KiBot (KiCad 10 Docker)
+Dieses Repo nutzt **[KiBot](https://github.com/INTI-CMNB/KiBot)** in einem **vorkonfigurierten Docker-Container für KiCad 10**, um automatisch:
 - **Schaltpläne als PDF** zu exportieren
 - **Platinen-Layouts als PNG** zu rendern
 - **3D-Ansichten** der Platine zu generieren
@@ -57,4 +57,4 @@ Dieses Repo nutzt **[KiBot](https://github.com/INTI-CMNB/KiBot)**, um automatisc
 ## 📄 Lizenz
 [MIT](LICENSE) – Nutze, modifiziere und teile das Projekt frei!
 
-<!-- KiBot Pipeline Test Trigger: $(date) -->
+<!-- KiBot Docker Pipeline Test Trigger: $(date +%s) -->
