@@ -3,14 +3,14 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "9.0.3+1"
+      "Version": "10.0.1"
     },
-    "CreationDate": "2025-11-18T09:19:09+01:00"
+    "CreationDate": "2026-05-04T07:24:00+02:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
-      "Name": "Stylophon_1",
-      "GUID": "5374796c-6f70-4686-9f6e-5f312e6b6963",
+      "Name": "Stiftklavier",
+      "GUID": "53746966-746b-46c6-9176-6965722e6b69",
       "Revision": "1.0"
     },
     "Size": {
@@ -34,17 +34,47 @@
   ],
   "FilesAttributes": [
     {
-      "Path": "Stylophon_1-F_Cu.gbr",
+      "Path": "Stiftklavier-F_Cu.gbr",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Stylophon_1-F_Paste.gbr",
+      "Path": "Stiftklavier-B_Cu.gbr",
+      "FileFunction": "Copper,L2,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "Stiftklavier-F_Paste.gbr",
       "FileFunction": "SolderPaste,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Stylophon_1-Edge_Cuts.gbr",
+      "Path": "Stiftklavier-B_Paste.gbr",
+      "FileFunction": "SolderPaste,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "Stiftklavier-F_Silkscreen.gbr",
+      "FileFunction": "Legend,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "Stiftklavier-B_Silkscreen.gbr",
+      "FileFunction": "Legend,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "Stiftklavier-F_Mask.gbr",
+      "FileFunction": "SolderMask,Top",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "Stiftklavier-B_Mask.gbr",
+      "FileFunction": "SolderMask,Bot",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "Stiftklavier-Edge_Cuts.gbr",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     }

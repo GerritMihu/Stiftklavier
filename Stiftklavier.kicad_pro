@@ -488,7 +488,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Stylophon_1.kicad_pro",
+    "filename": "Stiftklavier.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -672,8 +672,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "Stylophon_1.kicad_sch",
-        "name": "Stylophon_1",
+        "filename": "Stiftklavier.kicad_sch",
+        "name": "Stiftklavier",
         "uuid": "fc66649b-a600-400d-9374-021afb915c60"
       }
     ],
